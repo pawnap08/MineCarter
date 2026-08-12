@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="Thu, 01 Jan 1970 00:00:00 GMT">
+
+    <title>MineCarter</title>
+    <link rel="icon" href="MineCarter.icon.png">
+    <style>
+@font-face {
+  font-family: minecraft;
+  src: url(src/Minecraft-Seven_v3_1.ttf);
+}
+
+* {
+    font-family: minecraft;
+    image-rendering: pixelated;
+    color: white;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    background-image: url(src/Header-background.png), url(src/Background.png);
+    background-repeat: repeat-x, repeat;
+
+    width: 100%;
+    min-height: calc(100vh - 55px);
+}
+
+a img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 50px;
+
+    width: 95%;
+    max-width: 800px;
+}
+
+button {
+    cursor: pointer;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 90px;
+    margin-bottom: 100px;
+
+    padding: 15px;
+
+    width: 20%;
+    min-width: 170px;
+    font-size: 25px;
+
+    background-color: green;
+}
+
+.download {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.syslist {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.syslist li {
+    max-width: 400px;
+    padding-right: 10px
+}
+
+footer {
+    height: 50px;
+    background-image: url(src/deepslate.png);
+    background-size: 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 5px solid black;
+}
+    </style>
+  </head>
+  <body>
+    <main>
+      <a href="index.html"><img src="MineCarter.png" alt="MineCarter Logo"></a>
+      <button onclick="window.location.href='MineCarter.html';">LAUNCH</button>
+      
+      <div class="download">
+          <h3>Desktop downloads</h3>
+          <ul class="syslist">
+            <li>
+              <a href="MineCarter.exe">Windows</a>
+              <p>On launch Windows Defender may give you a blue scary popup because this executable is "untrusted", but you can bypass it by clicking more info and run anyway.</p>
+            </li>
+            <li>
+              <a href="MineCarter.x86_64">Linux</a>
+              <p>Tested on Fedora 44 and Ubuntu 26.04 LTS, but on Ubuntu you have to enable executable as program in file's properties</p>
+            </li>
+          </ul>
+      </div>
+    </main>
+    <footer>🄯2026 Made by PawNap - <a href="https://pawnap08.github.io"> pawnap08.github.io</a></footer>
+  </body>
+</html>
